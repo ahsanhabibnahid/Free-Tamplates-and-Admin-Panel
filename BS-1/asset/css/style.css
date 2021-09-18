@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.gallery-item{
+    position: relative;
+    
+}
+.gallery-item .g_overlay{
+    height: 0;
+    width: 100%;
+    background: rgba(39, 0, 255, 0.5);
+    position: absolute;
+    top: 0;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    opacity: 0;
+    transition: .5s;
+} 
+.gallery-item .g_overlay a{
+   color: #fff;
+    font-size: 30px;
+}
+.gallery-item .g_overlay a:focus{
+    color: #f00;
+}
+.gallery-item:hover .g_overlay{
+    opacity: 1;
+    height: 100%;
+}
